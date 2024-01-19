@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	width: 90%;
+	height: 90%;
+	margin: auto auto;
+}
+
+#container{
+	width: 450px;
+	height: 600px;
+	margin: 60px auto;
+}
+
+#container #gerador{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#container #gerador #requisitos{
+	width: 100%;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#container #gerador #requisitos #seletores{
+	width: 100%;
+	height: 120px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#container #gerador #requisitos #seletores .opt{
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+label{
+	font-size: 1.5em;
+	margin: 0 2px;
+}
+
+select {
+	font-size: 1.3em;
+	width: 150px;
+	height: 30px;
+	border-radius: 10px;
+	margin: 0 20px;
+}
+
+#container #gerador #requisitos #seletores .sel_option{
+	width: 50%;
+}
+
+#container #gerador #requisitos #seletores .sel_option input{
+	width: 15px;
+	height: 15px;
+}
+
+#container #gerador #requisitos button{
+	width: 250px;
+	margin: 10px auto;
+	display: inline-block;
+	padding: .75rem 1.25rem;
+	border-radius: 10rem;
+	color: #OCF;
+	background-color: #1E90FF;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: .15rem;
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+#container #gerador #requisitos button:hover{
+	color: #ffffff;
+	background-color: #000080;
+}
+
+
+#container #gerador #senha_gerada{
+	height: 300px;
+}
+
+#container #gerador #senha_gerada #titulo {
+	width: 100%;
+	height: 30px;
+	background-color: #87CEEB;
+	border-radius: 10px 10px 0 0;
+	text-align: center;
+	padding: 5px;
+}
+
+#container #gerador #senha_gerada #titulo p{
+	color: #2F4F4F;
+	font-size: 1.3em;
+}
+
+#container #gerador #senha_gerada #senha {
+	width: 100%;
+	height: 100px;
+	border-radius: 0 0 10px 10px;
+	background-color: #FF8C00;
+	font-size: 1em;
+	color: #800000;
+	display: grid;
+	place-items: center;
+}
